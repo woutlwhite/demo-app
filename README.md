@@ -13,7 +13,7 @@ npm start
 
 001: Theme Switcher<br>
 002: Change of component on scroll  <br>
-003: ...<br>
+003: CSS Flip Card Effect (TODO)<br>
 ...
 
 ## 001: Adding Theme Switcher to App
