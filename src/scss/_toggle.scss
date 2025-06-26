@@ -1,7 +1,9 @@
 .toggleContainer {
-    position: fixed;
+    position: absolute;
     right: 2em;
-    top: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     .toggle {
         visibility: hidden;
@@ -12,6 +14,7 @@
             font-size: 1.5em;
             cursor: pointer;
             color: var(--toggle-color);
+            position: relative;
 
             // add switch button manually
             &:before {

@@ -12,7 +12,7 @@ npm start
 ## Road Map of Tasks/Modules
 
 001: Theme Switcher<br>
-002: ... <br>
+002: Change of component on scroll  <br>
 003: ...<br>
 ...
 

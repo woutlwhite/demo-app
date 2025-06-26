@@ -11,3 +11,21 @@
 body {
   font-family: 'Roboto Mono', monospace;
 }
+
+header {
+  display: flex;
+  top: 0;
+  height: 100px;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: wheat;
+  z-index: 100;
+
+  h1 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+  }
+}
