@@ -12,7 +12,7 @@ export const StartScreen = ({transitionVariants}) => (
     transition={{ duration: 0.6 }}
   >
     <h1 className='title'>
-      Theme Switcher Example
+      Start Screen
     </h1>
     <ScrollHintArrow isInverted={false} />
   </motion.div>
