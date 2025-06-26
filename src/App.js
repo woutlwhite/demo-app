@@ -4,45 +4,14 @@ import { Toggle } from './components/Toggle';
 import useLocalStorage from 'use-local-storage';
 import { AnimatePresence, motion } from 'framer-motion';
 import ScrollHintArrow from './components/ScrollHintArrow';
+import { StartScreen } from './components/StartScreen';
+import { ProfileScreen } from './components/ProfileScreen';
 
 const transitionVariants = {
   initial: { opacity: 0, y: 50 },
   animate: { opacity: 1, y: 0 },
   exit: { opacity: 0, y: -50 },
 };
-
-const Component1 = () => (
-  <motion.div 
-    className='content'
-    key="comp1"
-    initial="initial"
-    animate="animate"
-    exit="exit"
-    variants={transitionVariants}
-    transition={{ duration: 0.6 }}
-  >
-    <h1 className='title'>
-      Theme Switcher Example
-    </h1>
-    <ScrollHintArrow isInverted={false} />
-  </motion.div>
-);
-
-const Component2 = () => (
-  <motion.div 
-    className='content'
-    key="comp2"
-    initial="initial"
-    animate="animate"
-    exit="exit"
-    variants={transitionVariants}
-    transition={{ duration: 0.6 }}
-  >
-    <ScrollHintArrow isInverted={true} />
-    <h1 className='title'>Component 2</h1>
-    <p>This is the second component shown after scrolling.</p>
-  </motion.div>
-);
 
 function App() {
   const themePreference = window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -83,9 +52,9 @@ function App() {
   
       <AnimatePresence mode="wait">
         {currentComponent === 1 ? (
-          <Component1 />
+          <StartScreen transitionVariants={transitionVariants} />
         ) : (
-          <Component2 />
+          <ProfileScreen transitionVariants={transitionVariants} />
         )}
       </AnimatePresence>
     </div>
