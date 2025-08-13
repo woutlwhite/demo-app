@@ -14,5 +14,16 @@ export const ProfileScreen = ({transitionVariants}) => (
     <ScrollHintArrow isInverted={true} />
     <h1 className='title'>Component 2</h1>
     <p>This is the second component shown after scrolling.</p>
+
+    <div className='flipcard'>
+      <div className='flipcard-inner'>
+        <div className='flipcard_front'>
+
+        </div>
+        <div className='flipcard_back'>
+          Flip Card Demo
+        </div>
+      </div>
+    </div>
   </motion.div>
 );
