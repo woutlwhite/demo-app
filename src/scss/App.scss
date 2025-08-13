@@ -1,7 +1,7 @@
 
-@import './variables';
-@import './start';
-@import './toggle';
+@use './variables';
+@use './start';
+@use './toggle';
 
 .App {
   width: 100%;
